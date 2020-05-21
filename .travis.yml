@@ -13,3 +13,10 @@ deploy:
   api_key:
     secure: <api_deploy_key>
   app: spotifyalert-chatbot
+sh$ cd /path/to/your/project
+sh$ gem install travis
+sh$ heroku login
+Email: siriwarin22@gmail.com
+Password: 0896519537z
+Logged in as youremail@domain.com
+sh$ travis encrypt $(heroku auth:token) --add deploy.api_key
